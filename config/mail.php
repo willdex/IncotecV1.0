@@ -56,7 +56,7 @@ OB    | your application here. By default, Laravel is setup for SMTP mail.
     |
     */
 
-    'from' => ['address' => 'compras@incotec.cc', 'name' => 'INCOTEC'],
+    'from' => ['address' => 'willduabyakosky@gmail.com', 'name' => 'INCOTEC'],
 
     /*
     |--------------------------------------------------------------------------

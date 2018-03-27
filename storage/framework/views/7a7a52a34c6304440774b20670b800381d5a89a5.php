@@ -282,22 +282,37 @@ table[class=hide], img[class=hide], td[class=hide] {
 
                 <!-- ======= start hero article ======= -->
 
-                <table class="one-column" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-spacing:0" bgcolor="#FFFFFF">
-                  <tr>
-                    <td align="center" style="padding:0px 40px 0px 40px"><p style="color:#5b5f65; font-size:27px; text-align:center; font-family: Verdana, Geneva, sans-serif"><p style="color:#0074B8; font-size:30px; text-align:center; font-family: Verdana, Geneva, sans-serif"><strong> SISTEMA DE COMPRAS INCOTEC </strong> </p><p style="color:#5b5f65; font-size:24px; text-align:center; font-family: Verdana, Geneva, sans-serif"><strong> ADJUDICACION PROVISIONAL</strong> </p>
 
-                      <p style="color:#5b5f65; font-size:16px; text-align:left; font-family: Verdana, Geneva, sans-serif">Estimado Proveedor, le comunicamos la ADJUDICACION PROVISIONAL de la Solicitud de Propuesta<b style="color: #548DD4;"> "<?php echo $txttitulo; ?>"</b>. La propuesta referida será efectiva una vez que se le haga llegar la Orden de Compra Formal o el Contrato de provisión por parte de Incotec.
+                <table class="one-column" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-spacing:0" bgcolor="#FFFFFF">
+
+                  <tr>
+
+                    <td align="center" style="padding:0px 40px 0px 40px">
+                      <p style="color:#0074B8; font-size:30px; text-align:center; font-family: Verdana, Geneva, sans-serif"><strong> SISTEMA DE COMPRAS INCOTEC </strong> </p>
+                      <p style="color:#5b5f65; font-size:24px; text-align:center; font-family: Verdana, Geneva, sans-serif"><strong> REQUISITOS DE REGISTRO </strong> </p>
+                      <p style="color:#5b5f65; font-size:16px; text-align:left; font-family: Verdana, Geneva, sans-serif">Recibimos una solicitud de registro de proveedores en nuestro “Sistema de Compras Incotec”.
                       </p>
 
-                       <p style="color:#5b5f65; font-size:16px; text-align:left; font-family: Verdana, Geneva, sans-serif">En breve nos pondremos en contacto con ustedes.</b></p>
+                      <p style="color:#5b5f65; font-size:16px; text-align:left; font-family: Verdana, Geneva, sans-serif">Para ser parte de nuestros proveedores deberá cumplir con la siguiente documentación:
+                      </p>
 
-                      <p style="color:#5b5f65; font-size:16px; text-align:left; font-family: Verdana, Geneva, sans-serif">Para cualquier consulta puede enviar un correo a <a href="mailto:compras@incotec.cc">compras@incotec.cc</a>
-                      y/o a través de nuestro formulario de consultas dentro del “Sistema de Compras de Incotec”. </p>
+                      <p style="color:#5b5f65; font-size:16px; text-align:left; font-family: Verdana, Geneva, sans-serif">1)  Anexo I - “Formulario Registro de Proveedor Nacional”.</p>
+                      <p style="color:#5b5f65; font-size:16px; text-align:left; font-family: Verdana, Geneva, sans-serif">2)  Copia simple del Certificado de Actualización de la Matricula de Comercio Vigente.</p>
+                      <p style="color:#5b5f65; font-size:16px; text-align:left; font-family: Verdana, Geneva, sans-serif">3)  Certificado Electrónico de la Inscripción al Padrón Nacional de Contribuyente (NIT)</p>
+                      <p style="color:#5b5f65; font-size:16px; text-align:left; font-family: Verdana, Geneva, sans-serif">4)  Copia simple del Certificado de Activación de Dosificación de la Factura</p>
+                      <p style="color:#5b5f65; font-size:16px; text-align:left; font-family: Verdana, Geneva, sans-serif">5)  Copia simple de la Licencia de Funcionamiento de Actividad Económica.<p>
+                        <p style="color:#5b5f65; font-size:16px; text-align:left; font-family: Verdana, Geneva, sans-serif">6)  Copia simple del Certificado de Registro de Empleador (ROE).<p>
+                          <p style="color:#5b5f65; font-size:16px; text-align:left; font-family: Verdana, Geneva, sans-serif">7)  Copia Simple del Documento de Identidad del (los) Representante (s) legal (es) de la empresas.<p>
+
+                      <p style="color:#5b5f65; font-size:16px; text-align:left; font-family: Verdana, Geneva, sans-serif">Envía tu documentación escaneada al correo <a href="mailto:compras@incotec.cc">compras@incotec.cc</a>,
+
+                      </p>
+                      <p style="color:#5b5f65; font-size:16px; text-align:left; font-family: Verdana, Geneva, sans-serif">En breve recibirá al correo electrónico registrado la confirmación y los accesos para inicio de sesión en el  “Sistema de Compras Incotec”.</p>
 
 
 
                       <!-- START BUTTON -->
-
+<!--
                      <center>
                         <table cellpadding="0" cellspacing="0" border="0" width="100%">
                           <tr>
@@ -311,7 +326,7 @@ table[class=hide], img[class=hide], td[class=hide] {
                                   <tr>
                                     <td align="center"><table border="0" cellpadding="0" cellspacing="0" style="Margin:0 auto;">
                                         <tr>
-                                          <td width="250" height="60" align="center" bgcolor="#0074B8"><a href="https://licitaciones.incotec.com.bo" style="width:250; display:block; text-decoration:none; border:0; text-align:center; font-weight:bold;font-size:18px; font-family: Arial, sans-serif; color: #ffffff; background:#0074B8" class="button_link" target="_blank">Sistema de Compras Incotec</a></td>
+                                          <td width="250" height="60" align="center" bgcolor="#0074B8"><a href="http://licitaciones.incotec.com.bo" style="width:250; display:block; text-decoration:none; border:0; text-align:center; font-weight:bold;font-size:18px; font-family: Arial, sans-serif; color: #ffffff; background:#0074B8" class="button_link" target="_blank">Sistema de Compras Incotec</a></td>
                                         </tr>
                                       </table></td>
                                   </tr>
@@ -319,13 +334,7 @@ table[class=hide], img[class=hide], td[class=hide] {
                               </table></td>
                           </tr>
                         </table>
-                      </center>
-
-
-                      <br><br><br>
-
-                       <p style="color:#5b5f65; font-size:15px; text-align:left; font-family: Verdana, Geneva, sans-serif">
-                      Sus datos son generados de manera automática por nuestro sistema, si necesita recuperar sus datos de acceso contactar con <a href="mailto:compras@incotec.cc"> compras@incotec.cc </a></p>
+                      </center>     -->
 
 
 
@@ -397,4 +406,5 @@ table[class=hide], img[class=hide], td[class=hide] {
   </table>
 </center>
 </body>
+</html>
 

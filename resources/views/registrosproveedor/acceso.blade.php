@@ -30,7 +30,7 @@
               <tbody align="center" id="body_empresa">          
               @foreach($prov as $user)
               <tr>
-  <td style="font-size: 15px;">{{ $user->proveedor}} </td>          
+                <td style="font-size: 15px;">{{ $user->proveedor}}</td>          
                 <td style="font-size: 15px;">{{ $user->correo}}</td>
                 <td style="font-size: 15px;">{{ $user->telefono}}</td>
                 <td style="font-size: 15px;">{{ $user->direccion}}</td>
@@ -42,7 +42,6 @@
       <div class="pull-left"> {!!$prov->render()!!}  </div>
 
       </div>
-  <button class='btn btn-primary' style="font-size: 14px; background-color: green;" data-toggle="modal" data-target="#modalAcceso" >Enviar Acceso</button>
     </div>
   </div>
 

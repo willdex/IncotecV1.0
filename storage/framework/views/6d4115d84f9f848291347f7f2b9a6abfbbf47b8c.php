@@ -240,9 +240,9 @@ table[class=hide], img[class=hide], td[class=hide] {
                                                       </table></td>
                                                   </tr>
                                                   <tr>
-                                                    <td class="inner" style="padding-top:10px;padding-bottom:0px; padding-right:10px;padding-left:10px;"><table class="contents" style="border-spacing:0; width:100%" bgcolor="#FFFFFF">
+                                                    <td class="inner" style="padding-top:10px;padding-bottom:20px; padding-right:10px;padding-left:10px;"><table class="contents" style="border-spacing:0; width:100%" bgcolor="#FFFFFF">
   <!--                                                      <tr>
-                                                          <td align="right" valign="bottom" class="text"><font style="font-size:14px; text-decoration:none; color:#5b5f65;font-family:Arial, Helvetica, sans-serif"><strong><a href="#" style="color:#5b5f65; text-decoration:none">ABOUT</a> | <a href="#" style="color:#5b5f65; text-decoration:none">PRESS</a> | <a href="#" style="color:#5b5f65; text-decoration:none">CONTACT</a></strong></font></td>
+                                                          <td align="right" valign="bottom" class="text"><font style="font-size:14px; text-decoration:none; color:#5b5f65;font-family:Arial, Helvetica, sans-serif"><strong><a href="#" style="color:#5b5f65; text-decoration:none">ABOUT</a> | <a href="#" style="color:#5b5f65; text-decoration:none">PRESS</a> | <a href="#" style="coslor:#5b5f65; text-decoration:none">CONTACT</a></strong></font></td>
                                                         </tr> -->
                                                       </table></td>
                                                   </tr>
@@ -284,21 +284,16 @@ table[class=hide], img[class=hide], td[class=hide] {
 
                 <table class="one-column" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-spacing:0" bgcolor="#FFFFFF">
                   <tr>
-                    <td align="center" style="padding:0px 40px 0px 40px"><p style="color:#5b5f65; font-size:27px; text-align:center; font-family: Verdana, Geneva, sans-serif"><p style="color:#0074B8; font-size:30px; text-align:center; font-family: Verdana, Geneva, sans-serif"><strong> SISTEMA DE COMPRAS INCOTEC </strong> </p><p style="color:#5b5f65; font-size:24px; text-align:center; font-family: Verdana, Geneva, sans-serif"><strong> ADJUDICACION PROVISIONAL</strong> </p>
-
-                      <p style="color:#5b5f65; font-size:16px; text-align:left; font-family: Verdana, Geneva, sans-serif">Estimado Proveedor, le comunicamos la ADJUDICACION PROVISIONAL de la Solicitud de Propuesta<b style="color: #548DD4;"> "<?php echo $txttitulo; ?>"</b>. La propuesta referida será efectiva una vez que se le haga llegar la Orden de Compra Formal o el Contrato de provisión por parte de Incotec.
-                      </p>
-
-                       <p style="color:#5b5f65; font-size:16px; text-align:left; font-family: Verdana, Geneva, sans-serif">En breve nos pondremos en contacto con ustedes.</b></p>
-
-                      <p style="color:#5b5f65; font-size:16px; text-align:left; font-family: Verdana, Geneva, sans-serif">Para cualquier consulta puede enviar un correo a <a href="mailto:compras@incotec.cc">compras@incotec.cc</a>
-                      y/o a través de nuestro formulario de consultas dentro del “Sistema de Compras de Incotec”. </p>
-
+                                         
+                    <td align="center" style="padding:0px 40px 40px 40px"><p style="color:#5b5f65; font-size:29px; text-align:center; font-family: Verdana, Geneva, sans-serif"> <p style="color:#0074B8; font-size:30px; text-align:center; font-family: Verdana, Geneva, sans-serif"><strong> SISTEMA DE COMPRAS INCOTEC </strong> </p>
+<p style="color:#5b5f65; font-size:24px; text-align:center; font-family: Verdana, Geneva, sans-serif"><strong> Solicitud de Registro </strong> </p>
+                      <p style="color:#5b5f65; font-size:16px; text-align:left; font-family: Verdana, Geneva, sans-serif">Recibimos una solicitud de registro de parte del correo <?php echo $emailR; ?> para el “Sistema de Compras Incotec”. </p>
+                      <p style="color:#5b5f65; font-size:16px; text-align:left; font-family: Verdana, Geneva, sans-serif">Se ha enviado automáticamente los requisitos de registro al solicitante.</p>
 
 
                       <!-- START BUTTON -->
-
-                     <center>
+<!--
+                      <center>
                         <table cellpadding="0" cellspacing="0" border="0" width="100%">
                           <tr>
                             <td><table border="0" cellpadding="0" cellspacing="0">
@@ -311,7 +306,7 @@ table[class=hide], img[class=hide], td[class=hide] {
                                   <tr>
                                     <td align="center"><table border="0" cellpadding="0" cellspacing="0" style="Margin:0 auto;">
                                         <tr>
-                                          <td width="250" height="60" align="center" bgcolor="#0074B8"><a href="https://licitaciones.incotec.com.bo" style="width:250; display:block; text-decoration:none; border:0; text-align:center; font-weight:bold;font-size:18px; font-family: Arial, sans-serif; color: #ffffff; background:#0074B8" class="button_link" target="_blank">Sistema de Compras Incotec</a></td>
+                                          <td width="250" height="60" align="center" bgcolor="#1f3ca6"><a href="#" style="width:250; display:block; text-decoration:none; border:0; text-align:center; font-weight:bold;font-size:18px; font-family: Arial, sans-serif; color: #ffffff; background:#1f3ca6" class="button_link">Call to Action</a></td>
                                         </tr>
                                       </table></td>
                                   </tr>
@@ -321,13 +316,7 @@ table[class=hide], img[class=hide], td[class=hide] {
                         </table>
                       </center>
 
-
-                      <br><br><br>
-
-                       <p style="color:#5b5f65; font-size:15px; text-align:left; font-family: Verdana, Geneva, sans-serif">
-                      Sus datos son generados de manera automática por nuestro sistema, si necesita recuperar sus datos de acceso contactar con <a href="mailto:compras@incotec.cc"> compras@incotec.cc </a></p>
-
-
+-->
 
                       <!-- END BUTTON --></td>
                   </tr>

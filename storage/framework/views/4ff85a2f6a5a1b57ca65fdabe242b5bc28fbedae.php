@@ -1,5 +1,5 @@
 <!-- Modal -->
-<div data-backdrop="static" class="modal fade" role="dialog" id="modal-delete-<?php echo e($pro->id); ?>">
+<div data-backdrop="static" class="modal fade" role="dialog" id="modal-acceso-<?php echo e($pro->id); ?>">
   	<div class="modal-dialog modal-md">
     	
 		    <div class="modal-content">
@@ -13,7 +13,7 @@
 		        	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
 
-		      			<?php echo e(Form::Open(array('action'=>array('RegistrosProveedorController@destroy',$pro->id),'method'=>'delete'))); ?>
+		      			<?php echo e(Form::Open(array('action'=>array('EnvioController@store',$pro->id),'method'=>'delete'))); ?>
 
 		         
 		              	<div class="form-group">

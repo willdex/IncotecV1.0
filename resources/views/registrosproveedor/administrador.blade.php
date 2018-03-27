@@ -1,15 +1,15 @@
- @extends ('layouts.cpanelp')
+@extends ('layouts.cpanelp')
 @section ('contenido')
 
 @include('registrosproveedor.modal')
-
+ 
 
 	<div class="row">
 		<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-			<h3>Listado de Proveedores <a href="registrosproveedor/create"><button class="btn btn-success">Nuevo</button></a></h3>
+			<h3>Listado de Administradores <a href="createadmin"><button class="btn btn-success">Nuevo</button></a></h3>
 			@include('registrosproveedor.search')
 			@include('alerts.success')
-          	@include('alerts.errors')
+          @include('alerts.errors')
 		</div>
  
 	</div> 
@@ -60,7 +60,7 @@
 		</div>
 	</div>
 	{!!Html::script('js/jsmodal.js')!!}
-	<script src="/js/laravel.js"></script>
+
 
 
 @endsection

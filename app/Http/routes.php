@@ -51,6 +51,13 @@ Route::resource('proveedores','ProveedoresController');
 
 //--registrar proveedor ruta para REGISTRO DE PROVEEDORES 15-02-18 !!Daniel Alanis
 Route::resource('registrosproveedor','RegistrosProveedorController');
+ 
+//
+Route::get('createadmin','RegistrosProveedorController@administrador');
+Route::post('registrosproveedor/updateadmintrador','RegistrosProveedorController@updateadministrador');
+Route::get('administrador','RegistrosProveedorController@admin');
+
+
 ///
 Route::get('registrosproveedor/password','RegistrosProveedorController@password');
 Route::post('registrosproveedor/updatepassword','RegistrosProveedorController@updatePassword');
@@ -67,4 +74,5 @@ Route::post('cargar_archivo_correo', 'CorreoController@store');
 Route::get('/uploadfile', 'CorreoController@index');
 Route::post('/uploadfile', 'CorreoController@showfileupload');
 Route::resource('/uploadfile','CorreoController');
+
 

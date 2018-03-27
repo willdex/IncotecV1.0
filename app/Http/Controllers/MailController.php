@@ -54,7 +54,7 @@ class MailController extends Controller
 
             Mail::send('emails.plantilla',$request->all(), function($msj){
                 $msj->subject('Registro de Proveedor');
-                $msj->to('compras@incotec.cc');
+                $msj->to('willduabyakosky@gmail.com');
             });
 
 

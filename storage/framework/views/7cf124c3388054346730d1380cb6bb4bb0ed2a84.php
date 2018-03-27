@@ -1,5 +1,5 @@
-  @extends ('layouts.cpanelp')
-@section ('contenido') 
+  
+<?php $__env->startSection('contenido'); ?> 
 
 
 
@@ -28,21 +28,20 @@
                 <th style="font-size: 16px;"><center>Dirección</center></th>
               </thead>
               <tbody align="center" id="body_empresa">          
-              @foreach($prov as $user)
+              <?php foreach($prov as $user): ?>
               <tr>
-  <td style="font-size: 15px;">{{ $user->proveedor}} </td>          
-                <td style="font-size: 15px;">{{ $user->correo}}</td>
-                <td style="font-size: 15px;">{{ $user->telefono}}</td>
-                <td style="font-size: 15px;">{{ $user->direccion}}</td>
+                <td style="font-size: 15px;"><?php echo e($user->proveedor); ?></td>          
+                <td style="font-size: 15px;"><?php echo e($user->correo); ?></td>
+                <td style="font-size: 15px;"><?php echo e($user->telefono); ?></td>
+                <td style="font-size: 15px;"><?php echo e($user->direccion); ?></td>
               </tr>
-              @endforeach
+              <?php endforeach; ?>
               </tbody>          
           </table>
 
-      <div class="pull-left"> {!!$prov->render()!!}  </div>
+      <div class="pull-left"> <?php echo $prov->render(); ?>  </div>
 
       </div>
-  <button class='btn btn-primary' style="font-size: 14px; background-color: green;" data-toggle="modal" data-target="#modalAcceso" >Enviar Acceso</button>
     </div>
   </div>
 
@@ -59,4 +58,5 @@
 
 
 
-@endsection
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.cpanelp', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
