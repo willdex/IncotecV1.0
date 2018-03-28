@@ -176,7 +176,7 @@ class RegistrosProveedorController extends Controller
             }
             else
             {
-                return redirect('registrosproveedor/password')->with('message', 'Credenciales incorrectas');
+                return redirect('password')->with('message', 'Credenciales incorrectas');
             }
         }
 
@@ -221,7 +221,7 @@ class RegistrosProveedorController extends Controller
             return Redirect::to('/registrosproveedor')->with('message', 'Proveedor eliminado correctamente');
         }catch (\Exception $e) {
 
-            return Redirect::to('/registrosproveedor')->with('message-error', 'El Proveedor NO se puede eliminar. Ya que esta Casado a una CATEGORIA o a una CONVOCATORIA.');
+            return Redirect::to('/registrosproveedor')->with('message-error', 'El Proveedor NO se puede eliminar. Ya que esta Casado a una CATEGORIA o a una CONVOCATORIA.'); 
         }
             
 

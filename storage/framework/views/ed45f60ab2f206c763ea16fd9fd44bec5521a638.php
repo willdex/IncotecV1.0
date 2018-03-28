@@ -2,7 +2,7 @@
 <?php $__env->startSection('contenido'); ?>
 	<div class="row">
 		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-			<h3>Nuevo Proveedor</h3>
+			<h3>Nuevo Adminstrador</h3>
 			<?php if(count($errors)>0): ?>
 			<div class="alert alert-danger">
 				<ul>
@@ -13,7 +13,7 @@
 			</div>
 			<?php endif; ?>
 
-			<?php echo Form::open(array('url'=>'registrosproveedor','method'=>'POST','autocomplete'=>'off')); ?>
+			<?php echo Form::open(array('url'=>'registrosproveedor/updateadmintrador','method'=>'POST','autocomplete'=>'off')); ?>
 
 			<?php echo e(Form::token()); ?>
 

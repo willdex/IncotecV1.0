@@ -89,7 +89,7 @@ $file->getMimeType();
 
             Mail::send('emails.propuesta',$request->all(), function($msj) use ($file) {
                 $msj->subject('Propuesta Recibida');
-                $msj->to('compras@incotec.cc');
+                $msj->to('willduabyakosky@gmail.com');
                 $msj->attach($file);
 
 

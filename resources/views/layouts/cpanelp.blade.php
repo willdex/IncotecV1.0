@@ -115,7 +115,7 @@
             <li class="treeview">
               <a href="{!!URL::to('escritorio')!!}">
                 <i class="fa fa-tachometer" aria-hidden="true"></i>
-                <span>DASHBOARD</span>
+                <span>ESCRITORIO</span>
               </a>
             </li> 
              
@@ -130,9 +130,9 @@
               
              
               <ul class="treeview-menu">
-                 <li><a href="{!!URL::to('convocatoriasaprobadas')!!}"><i class="fa fa-circle-o"></i> Adjudicadas </a></li>
-                <li><a href="{!!URL::to('convocatoriasactivas')!!}"><i class="fa fa-circle-o"></i> Activas </a></li>
-                <li><a href="{!!URL::to('convocatoriasinactivas')!!}"><i class="fa fa-circle-o"></i> Inactivas </a></li>
+                 <li><a href="{!!URL::to('convocatoriasaprobadas')!!}"><i class="fa fa-shopping-cart"></i> Adjudicadas </a></li>
+                <li><a href="{!!URL::to('convocatoriasactivas')!!}"><i class="fa fa-thumbs-up"></i> Activas </a></li>
+                <li><a href="{!!URL::to('convocatoriasinactivas')!!}"><i class="fa fa-thumbs-down"></i> Inactivas </a></li>
               </ul>
             </li> 
 
@@ -166,16 +166,36 @@
                 <span>REGISTRO PROVEEDOR</span>
               </a>
             </li>   
-
+            <li class="treeview">
+              <a href="{!!URL::to('administrador')!!}">
+                <i class="fa fa-clipboard" aria-hidden="true"></i>
+                <span>REGISTRO ADMINISTRADOR</span>
+              </a>
+            </li>
  @endif  
 
             <li class="treeview">
-              <a href="{{URL('registrosproveedor/password')}}">
+              <a href="{{URL::to('password')}}">
                 <i class="fa fa-key" aria-hidden="true"></i>
                 <span>CAMBIAR PASSWORD</span>
               </a>
             </li>
 
+<!--            <li class="treeview">
+              <a href="#">
+
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>MAILING</span>
+                 <i class="fa fa-angle-left pull-right" style="color: white; font-size: 18px;"></i>
+              </a>
+              
+             
+              <ul class="treeview-menu">
+                 <li><a href="{!!URL::to('mailing')!!}"><i class="fa fa-laptop"></i> Acceso </a></li>
+                
+              </ul>
+            </li> --!>
+ 
             <li class="treeview">
               <a href="{!!URL::to('perfil')!!}">
                 <i class="fa fa-user" aria-hidden="true"></i>
@@ -185,9 +205,6 @@
 
              
 @if(Auth::user()->privilegio == 0)
-
-
-<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="f62004a0-541d-482d-93c9-d29cab10189e";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 
             <li class="treeview">
               <a href="{!!URL::to('ayuda')!!}">
@@ -333,6 +350,7 @@
               
         {!!Html::script('js/bootstrap-datetimepicker.min.js')!!}
        {!!Html::script('js/sistemalaravel.js')!!}
+       <script src="/js/laravel.js"></script> 
 
   </body>
 </html>

@@ -1,15 +1,14 @@
- 
 <?php $__env->startSection('contenido'); ?>
 
 <?php echo $__env->make('registrosproveedor.modal', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
-
+ 
 
 	<div class="row">
 		<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-			<h3>Listado de Proveedores <a href="registrosproveedor/create"><button class="btn btn-success">Nuevo</button></a></h3>
+			<h3>Listado de Administradores <a href="createadmin"><button class="btn btn-success">Nuevo</button></a></h3>
 			<?php echo $__env->make('registrosproveedor.search', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 			<?php echo $__env->make('alerts.success', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
-          	<?php echo $__env->make('alerts.errors', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+          <?php echo $__env->make('alerts.errors', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 		</div>
  
 	</div> 
@@ -62,7 +61,7 @@
 	</div>
 	<?php echo Html::script('js/jsmodal.js'); ?>
 
-	<script src="/js/laravel.js"></script>
+
 
 
 <?php $__env->stopSection(); ?>
