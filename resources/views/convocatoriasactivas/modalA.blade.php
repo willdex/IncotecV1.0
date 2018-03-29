@@ -1,42 +1,35 @@
-@include('alerts.cargando')
-
-@extends('layouts.cpanelp')
-
-  @section('contenido')
-
 <!-- Modal -->
-<div id="ModalAdjuntar">
+<div id="ModalAdjuntar" data-backdrop="static" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-md">
     <!-- Modal content-->
     <div class="modal-content">
 
       <div class="modal-header" style="background: #3c8dbc; color: white">
-        <h3 class="modal-title"><b>Envíe su Propuesta</b></h3>
+        <h3 class="modal-title"><b>Adjuntar Propuesta</b></h3>
       </div> 
-
 
             @if(Auth::user()->privilegio == 0)
 
-              <div class="col-lg-6">
+      <div class="modal-body">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
 
-                <h3> Envíanos tu consulta </h3>
 
                 {!!Form::open(['route'=>'correo.store', 'method'=>'POST','url'=>'/uploadfile','files'=>'true'])!!}
+         
+              <div class="form-group">
 
-                  <div class="form-group">
+      
 
-                       <?php $convo = DB::select('SELECT * FROM convocatoria WHERE estado="activa"'); 
-                   ?>
-                    
-                    {!!Form::label('titulo','Convocatorias Activas:')!!}
-                  <select name="asunto" id="asunto" class="form-control selectpicker" data-live-search="true" required>
-                    <option value=""> Seleccione la Convocatoria... </option>
-                      @foreach($convo as $movC)
-                        <option value="{{$movC->titulo}}">{{$movC->titulo}}</option>
-                      @endforeach
-                  </select>
-                  <br><br>
+                  {!!Form::label('titulo2','Título:')!!}
+                  <input type="text" class="form-control" name="titulo" id="asunto" >
+                  <br>
 
-                    <label style="font-size: 18px;">Mensaje:</label>
+                  
+                   <!--?php $prov = DB::select('SELECT proveedor.id, proveedor FROM proveedor, prov_cat,categoria WHERE proveedor.id=prov_cat.id AND categoria.idcat=prov_cat.idcat AND categoria.nombre="" '); 
+                   ?-->
+
+                   
+                 <label style="font-size: 18px;">Mensaje:</label>
                     <textarea class="form-control" rows="5" name="mensaje" id="mensaje" placeholder="Mensaje" required style="border-radius: 5px; width: 100%;"></textarea>
 
                     <input type="hidden" name="correo" value="<?php echo Auth::user()->correo; ?>">
@@ -51,16 +44,27 @@
 
                   <button class="btn btn-lg btn-primary" type="submit" id="btnc" name="btnc">ENVIAR</button> <br><br>
          
+          <button data-dismiss="modal" class="btn btn-danger" >CANCELAR</button>
                 {!!Form::close()!!}
 
                 @include('alerts.success')
                 @include('alerts.errors')
 
-              </div>
 
-        @endif
-              
- <script src="js/jquery.js"></script>
+@endif
+
+</div>
+</div>
+
+
+
+
+      <div class="modal-footer">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+ 
+
+
+  <script src="js/jquery.js"></script>
 
     {!!Html::script('js/myjs.js')!!}
     {!!Html::script('js/myjscargando.js')!!}
@@ -78,11 +82,3 @@
     </div>
   </div>
 </div>
-
-       
- 
-
-
-
-
-@endsection

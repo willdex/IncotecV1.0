@@ -20,7 +20,6 @@ class CorreoController extends Controller
      */
     public function index()
     {
-            return view('convocatoriasactivas.modalA');
     }
 
     /**
@@ -30,7 +29,6 @@ class CorreoController extends Controller
      */
     public function crear()
     {
-        return view('convocatoriasactivas.modalA');
 
         
 
@@ -96,11 +94,11 @@ $file->getMimeType();
             });
 
               Session::flash('message','Enviado Correctamente.');
-            return Redirect::to('form_enviar_correo');
+            return Redirect::to('escritorio');
 
         } catch (\Exception $e) {
             Session::flash('message-error','Mensaje no enviado, Intente mas tarde.');
-            return Redirect::to('form_enviar_correo');
+            return Redirect::to('escritorio');
         }
 
     }

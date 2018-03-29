@@ -72,12 +72,11 @@
             <td style="font-size: 15px;"><?php echo e($mov->nombre); ?></td>
             <td style="font-size: 15px;"><?php echo e($mov->fecha); ?></td>
             <td style="font-size: 15px;"> <a href="<?php echo nl2br(e($mov->descripcion)); ?>"><button class="btn btn-primary" style="font-size: 14px;"><i class="fa fa-download" aria-hidden="true" style="font-size: 18px;"></i> DESCARGAR</button></a> 
-           
 
 
-         
-            <a href="<?php echo URL::to('form_enviar_correo'); ?>" class="small-box-footer" style="font-size: 17px;"><button class='btn btn-primary' style='background-color: black; font-size: 15px;'>Enviar Propuesta</button></a>
+<button class='btn btn-primary' style='background-color: black; font-size: 15px;'  data-t="<?php echo e($mov->titulo); ?>" data-toggle="modal" data-target="#ModalAdjuntar" >Enviar Propuesta</button></a>
 
+<?php echo $__env->make('convocatoriasactivas.modalA', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 
             </td>
           </tr>

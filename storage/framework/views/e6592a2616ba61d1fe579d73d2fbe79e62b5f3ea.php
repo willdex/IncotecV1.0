@@ -1,44 +1,37 @@
-<?php echo $__env->make('alerts.cargando', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
-
-
-
-  <?php $__env->startSection('contenido'); ?>
-
 <!-- Modal -->
-<div id="ModalAdjuntar">
+<div id="ModalAdjuntar" data-backdrop="static" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-md">
     <!-- Modal content-->
     <div class="modal-content">
 
       <div class="modal-header" style="background: #3c8dbc; color: white">
-        <h3 class="modal-title"><b>Envíe su Propuesta</b></h3>
+        <h3 class="modal-title"><b>Adjuntar Propuesta</b></h3>
       </div> 
-
 
             <?php if(Auth::user()->privilegio == 0): ?>
 
-              <div class="col-lg-6">
+      <div class="modal-body">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
 
-                <h3> Envíanos tu consulta </h3>
 
                 <?php echo Form::open(['route'=>'correo.store', 'method'=>'POST','url'=>'/uploadfile','files'=>'true']); ?>
 
+         
+              <div class="form-group">
 
-                  <div class="form-group">
+      
 
-                       <?php $convo = DB::select('SELECT * FROM convocatoria WHERE estado="activa"'); 
-                   ?>
-                    
-                    <?php echo Form::label('titulo','Convocatorias Activas:'); ?>
+                  <?php echo Form::label('titulo2','Título:'); ?>
 
-                  <select name="asunto" id="asunto" class="form-control selectpicker" data-live-search="true" required>
-                    <option value=""> Seleccione la Convocatoria... </option>
-                      <?php foreach($convo as $movC): ?>
-                        <option value="<?php echo e($movC->titulo); ?>"><?php echo e($movC->titulo); ?></option>
-                      <?php endforeach; ?>
-                  </select>
-                  <br><br>
+                  <input type="text" class="form-control" name="titulo" id="asunto" >
+                  <br>
 
-                    <label style="font-size: 18px;">Mensaje:</label>
+                  
+                   <!--?php $prov = DB::select('SELECT proveedor.id, proveedor FROM proveedor, prov_cat,categoria WHERE proveedor.id=prov_cat.id AND categoria.idcat=prov_cat.idcat AND categoria.nombre="" '); 
+                   ?-->
+
+                   
+                 <label style="font-size: 18px;">Mensaje:</label>
                     <textarea class="form-control" rows="5" name="mensaje" id="mensaje" placeholder="Mensaje" required style="border-radius: 5px; width: 100%;"></textarea>
 
                     <input type="hidden" name="correo" value="<?php echo Auth::user()->correo; ?>">
@@ -53,17 +46,28 @@
 
                   <button class="btn btn-lg btn-primary" type="submit" id="btnc" name="btnc">ENVIAR</button> <br><br>
          
+          <button data-dismiss="modal" class="btn btn-danger" >CANCELAR</button>
                 <?php echo Form::close(); ?>
 
 
                 <?php echo $__env->make('alerts.success', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
                 <?php echo $__env->make('alerts.errors', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 
-              </div>
 
-        <?php endif; ?>
-              
- <script src="js/jquery.js"></script>
+<?php endif; ?>
+
+</div>
+</div>
+
+
+
+
+      <div class="modal-footer">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+ 
+
+
+  <script src="js/jquery.js"></script>
 
     <?php echo Html::script('js/myjs.js'); ?>
 
@@ -83,13 +87,3 @@
     </div>
   </div>
 </div>
-
-       
- 
-
-
-
-
-<?php $__env->stopSection(); ?>
-
-<?php echo $__env->make('layouts.cpanelp', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

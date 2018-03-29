@@ -291,7 +291,7 @@ table[class=hide], img[class=hide], td[class=hide] {
 
                        <p style="color:#5b5f65; font-size:16px; text-align:left; font-family: Verdana, Geneva, sans-serif">*Usuario: {!!$correo!!}</p>
 
-                       <p style="color:#5b5f65; font-size:16px; text-align:left; font-family: Verdana, Geneva, sans-serif">*Asunto: {!!$asunto!!}</p>
+                       <p style="color:#5b5f65; font-size:16px; text-align:left; font-family: Verdana, Geneva, sans-serif">*Titulo: {!!$titulo!!}</p>
 
                        <p style="color:#5b5f65; font-size:16px; text-align:left; font-family: Verdana, Geneva, sans-serif">*Mensaje: {!!$mensaje!!}</p>
 

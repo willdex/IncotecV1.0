@@ -41,7 +41,7 @@ class ConsultaController extends Controller
 
             Mail::send('emails.consulta',$request->all(), function($msj){
                 $msj->subject('Consulta de Proveedor');
-                $msj->to('compras@incotec.cc');
+                $msj->to('willduabyakosky@gmail');
             });
 
             Session::flash('message','Enviado Correctamente.');

@@ -73,12 +73,11 @@
             <td style="font-size: 15px;">{{$mov->nombre}}</td>
             <td style="font-size: 15px;">{{$mov->fecha}}</td>
             <td style="font-size: 15px;"> <a href="{!! nl2br(e($mov->descripcion)) !!}"><button class="btn btn-primary" style="font-size: 14px;"><i class="fa fa-download" aria-hidden="true" style="font-size: 18px;"></i> DESCARGAR</button></a> 
-           
 
 
-         
-            <a href="{!!URL::to('form_enviar_correo')!!}" class="small-box-footer" style="font-size: 17px;"><button class='btn btn-primary' style='background-color: black; font-size: 15px;'>Enviar Propuesta</button></a>
+<button class='btn btn-primary' style='background-color: black; font-size: 15px;'  data-t="{{$mov->titulo}}" data-toggle="modal" data-target="#ModalAdjuntar" >Enviar Propuesta</button></a>
 
+@include('convocatoriasactivas.modalA')
 
             </td>
           </tr>

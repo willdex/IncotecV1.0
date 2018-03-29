@@ -58,16 +58,13 @@ Route::post('adjuntarcategoria','RegistrosProveedorController@adjuntar_categoria
 
 //* adjuntar archivos willians d.
 
-Route::get('form_enviar_correo', 'CorreoController@crear');
-Route::post('enviar_correo', 'CorreoController@enviar');
-Route::post('cargar_archivo_correo', 'CorreoController@store');
-
+//Route::post('enviar_correo', 'CorreoController@enviar');
+//Route::post('cargar_archivo_correo', 'CorreoController@store');
 
 // Adjuntar Propuesta
 Route::get('/uploadfile', 'CorreoController@index');
 Route::post('/uploadfile', 'CorreoController@showfileupload');
 Route::resource('/uploadfile','CorreoController');
-
 
 ///Mailing  //Route::resource('convocatoriasaprobadas','ConvocatoriasAprobadasController');
 
